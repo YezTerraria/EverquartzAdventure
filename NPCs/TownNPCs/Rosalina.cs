@@ -478,18 +478,18 @@ namespace EverquartzAdventure.NPCs.TownNPCs
 
         public static void DeathEffectOnKill(Player player)
         {
-            //NetworkText networkText = NetworkText.FromKey(DeathMessageKey);
+            NetworkText networkText = NetworkText.FromKey(DeathMessageKey);
 
-            //if (Main.netMode == NetmodeID.SinglePlayer)
-            //{
-            //    Main.NewText(networkText.ToString(), byte.MaxValue, 25, 25);
-            //}
-            //else if (Main.netMode == NetmodeID.Server)
-            //{
-            //    ChatHelper.BroadcastChatMessage(networkText, new Color(255, 25, 25));
-            //}
+            if (Main.netMode == NetmodeID.SinglePlayer)
+            {
+                Main.NewText(networkText.ToString(), byte.MaxValue, 25, 25);
+            }
+            else if (Main.netMode == NetmodeID.Server)
+            {
+                ChatHelper.BroadcastChatMessage(networkText, new Color(255, 25, 25));
+            }
 
-            if (ModCompatibility.calamityEnabled)
+            if (ServerConfig.Instance.DeimosSummonsProvidence && ModCompatibility.calamityEnabled)
             {
                 CalamityWeakRef.SummonProv(player);
             }
