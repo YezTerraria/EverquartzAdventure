@@ -21,10 +21,11 @@ namespace EverquartzAdventure.Tiles
             Main.tileFrameImportant[base.Type] = true;
             Main.tileObsidianKill[base.Type] = true;
             TileID.Sets.DisableSmartCursor[base.Type] = true;
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
-            TileObjectData.newTile.Origin = new Point16(1, 1);
-            TileObjectData.newTile.CoordinateHeights = new int[2] { 16, 16 };
+            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
+            TileObjectData.newTile.Origin = new Point16(1, 2);
+            TileObjectData.newTile.CoordinateHeights = new int[3] { 16, 16, 16 };
             TileObjectData.newTile.AnchorInvalidTiles = new int[1] { 127 };
+            TileObjectData.newTile.DrawYOffset = 2;
             //TileObjectData.newTile.StyleHorizontal = true;
             TileObjectData.newTile.LavaDeath = false;
             //TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);
@@ -32,11 +33,6 @@ namespace EverquartzAdventure.Tiles
             LocalizedText name = CreateMapEntryName();
             AddMapEntry(new Color(200, 200, 200), name);
             base.DustType = 11;
-        }
-
-        public override void KillMultiTile(int i, int j, int frameX, int frameY)
-        {
-            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 32, 32, ModContent.ItemType<DeimosFumo>());
         }
     }
 }
