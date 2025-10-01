@@ -1,4 +1,4 @@
-﻿[h3]v0.2.4.5 Changes[/h3]
+﻿[h3]v0.2.4.6 Changes[/h3]
 [list]
 	[*]Fixed the mod to work with Calamity v2.0.5 and CCR v1.3.5.
 	[*]Fixed the "Deimos Fumo" tile multi-tile and sprite.
