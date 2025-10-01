@@ -17,7 +17,7 @@ using CalamityMod.Items.Weapons.DraedonsArsenal;
 using CalamityMod.Items.Pets;
 using CalamityMod.Items.Weapons.Rogue;
 using CalamityMod.Items.Weapons.Magic;
-using CalRemix.Items.Materials;
+using CalRemix.Content.Items.Materials;
 using CalamityMod.Items.Placeables.Ores;
 
 namespace EverquartzAdventure
@@ -42,7 +42,7 @@ namespace EverquartzAdventure
             internal static int AstralBlaster => ModContent.ItemType<AstralBlaster>();
             internal static int SeaPrism => ModContent.ItemType<SeaPrism>();
             internal static int ClockGatlignum => ModContent.ItemType<ClockGatlignum>();
-            internal static int Oracle => ModContent.ItemType<Oracle>();
+            internal static int TheOracle => ModContent.ItemType<TheOracle>();
             internal static int TheMicrowave => ModContent.ItemType<TheMicrowave>();
             internal static int PoleWarper => ModContent.ItemType<PoleWarper>();
             internal static int RottingEyeball => ModContent.ItemType<RottingEyeball>();
@@ -55,7 +55,7 @@ namespace EverquartzAdventure
             internal static int ShardofAntumbra => ModContent.ItemType<ShardofAntumbra>();
             internal static int LightGodsBrilliance => ModContent.ItemType<LightGodsBrilliance>();
             internal static int UnholyEssence => ModContent.ItemType<UnholyEssence>();
-            internal static int Phantoplasm => ModContent.ItemType<Polterplasm>();
+            internal static int Necroplasm => ModContent.ItemType<Necroplasm>();
             internal static int RuinousSoul => ModContent.ItemType<RuinousSoul>();
             internal static int AuricOre => ModContent.ItemType<AuricOre>();
             internal static int YharonSoulFragment => ModContent.ItemType<YharonSoulFragment>();

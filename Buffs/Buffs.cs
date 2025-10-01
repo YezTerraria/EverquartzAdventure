@@ -15,7 +15,6 @@ namespace EverquartzAdventure
 
             public static int MarkedForDeath => ModContent.BuffType<MarkedforDeath>();
             public static int ArmorCrunch => ModContent.BuffType<ArmorCrunch>();
-            public static int KamiFlu => ModContent.BuffType<KamiFlu>();
         }
     }
 }
