@@ -136,7 +136,7 @@ namespace EverquartzAdventure.Items.Weapons
 
         public override Color? GetAlpha(Color lightColor) => Color.White* Projectile.Opacity;
 
-        public override void Kill(int timeLeft)
+        public override void OnKill(int timeLeft)
         {
             Color fairyQueenWeaponsColor2 = Projectile.GetFairyQueenWeaponsColor();
             SoundEngine.PlaySound(in SoundID.Item10, Projectile.Center);

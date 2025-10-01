@@ -99,11 +99,6 @@ namespace EverquartzAdventure.Items.Weapons
             
         }
 
-        public override void ModifyFishingLine(ref Vector2 lineOriginOffset, ref Color lineColor)
-        {
-            lineColor = CelestialRarity.ColorSwap();
-        }
-
         //public override void ModifyHitNPC(NPC target, ref int damage, ref float knockback, ref bool crit, ref int hitDirection)
         //{
         //    //damage *= 1000;
