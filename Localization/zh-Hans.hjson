@@ -262,6 +262,17 @@ Mods: {
 			DownedDoG: Mods.EverquartzAdventure.Conditions.DownedDoG
 			HasElysianAegis: Mods.EverquartzAdventure.Conditions.HasElysianAegis
 		}
+
+		Configs: {
+			ServerConfig: {
+				// DisplayName: Config
+
+				DeimosSummonsProvidence: {
+					// Label: Deimos Summons Providence on Death
+					// Tooltip: Enable for Deimos to summon Providence on death.
+				}
+			}
+		}
 	}
 }
 
