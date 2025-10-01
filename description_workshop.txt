@@ -1,4 +1,17 @@
-﻿This is a small addon mod for Calamity Mod created by everquartz with the help of a few people.
+﻿[h3]v0.2.4.5 Changes[/h3]
+[list]
+	[*]Fixed the mod to work with Calamity v2.0.5 and CCR v1.3.5.
+	[*]Fixed the "Deimos Fumo" tile multi-tile and sprite.
+	[*]Fixed the "Divine Core" item spawning twice when right-clicked.
+	[*]Made the "Deimos Plush" item stack to 9999.
+	[*]Fixed the custom Deimos death message not working.
+	[*]Added a config to disable Deimos summoning Providence on death (Not localized to Russian or Chinese).
+	[*]Fixed the Deimos item dropping double items when right-clicked.
+[/list]
+
+
+
+This is a small addon mod for Calamity Mod created by everquartz with the help of a few people.
 It aims to include the Starborn Princess (Deimos) as an NPC and items relating to her and stuff like that. It's not too big of a mod, but it does include what people have been wanting for a little while now. 
 Big thanks to JesterRomut and gat for coding this. All sprites and concepts are practically done by everquartz alone.
 
