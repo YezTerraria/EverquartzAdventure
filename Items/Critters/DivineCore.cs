@@ -84,7 +84,10 @@ namespace EverquartzAdventure.Items.Critters
         {
             NPC.NewNPC(new EntitySource_WorldEvent(), (int)Math.Floor(player.Center.X), (int)Math.Floor(player.Center.Y), ModContent.NPCType<NPCs.Critters.DivineCore>());
         }
-
+        public override bool CanUseItem(Player player)
+        {
+            return base.CanUseItem(player);
+        }
         public override bool? UseItem(Player player)
         {
             if (player.altFunctionUse == 2)
@@ -105,23 +108,19 @@ namespace EverquartzAdventure.Items.Critters
                         packet.Send();
                     }
                 }
+                return true;
             }
-            else
+            base.Item.useStyle = ItemUseStyleID.EatFood;
+            base.Item.noUseGraphic = false;
+            SoundEngine.PlaySound(SoundID.Item2, player.Center);
+            Buffs.ForEach(buff => player.AddBuff(buff, buffDuration));
+            if (ModCompatibility.calamityEnabled)
             {
-                base.Item.useStyle = ItemUseStyleID.EatFood;
-                base.Item.noUseGraphic = false;
-                SoundEngine.PlaySound(SoundID.Item2, player.Center);
-                Buffs.ForEach(buff => player.AddBuff(buff, buffDuration));
-                if (ModCompatibility.calamityEnabled)
-                {
-                    CalamityBuffs.ForEach(buff => player.AddBuff(buff, buffDuration));
-                }
-                player.Heal(20);
-                player.HealEffect(20);
+                CalamityBuffs.ForEach(buff => player.AddBuff(buff, buffDuration));
             }
-            
-
-            return base.UseItem(player);
+            player.Heal(20);
+            player.HealEffect(20);
+            return null;
         }
 
         public override bool AltFunctionUse(Player player)

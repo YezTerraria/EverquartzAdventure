@@ -82,11 +82,6 @@ namespace EverquartzAdventure.Items.Critters
 
         }
 
-        public override void ModifyItemLoot(ItemLoot itemLoot)
-        {
-            StarbornPrincess.ModifyLoot(itemLoot);
-        }
-
         //public override bool? CanBurnInLava()/* tModPorter Note: Removed. Use ItemID.Sets.IsLavaImmuneRegardlessOfRarity or add a method hook to On_Item.CheckLavaDeath */
         //{
         //    return false;
