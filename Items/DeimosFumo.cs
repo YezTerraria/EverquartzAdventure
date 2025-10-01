@@ -26,7 +26,7 @@ namespace EverquartzAdventure.Items
             //Item.SetFoodDefault();
             Item.width = 40; 
 			Item.height = 64; 
-			Item.maxStack = 24; 
+			Item.maxStack = 9999; 
 			Item.value = Item.buyPrice(gold: 1); 
             Item.rare = ItemRarityID.Cyan;
             base.Item.consumable = true;
@@ -37,6 +37,7 @@ namespace EverquartzAdventure.Items
             base.Item.noMelee = true;
             base.Item.UseSound = SoundID.Item1;
             base.Item.useStyle = 1;
+            Item.autoReuse = true;
         }
     }
 }
