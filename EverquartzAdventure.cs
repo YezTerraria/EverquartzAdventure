@@ -14,6 +14,8 @@ using Terraria.ModLoader.IO;
 using System.Collections;
 using EverquartzAdventure.ILEditing;
 using EverquartzAdventure.UI.Transmogrification;
+using Terraria.ModLoader.Config;
+using System.ComponentModel;
 
 namespace EverquartzAdventure
 {
@@ -237,7 +239,15 @@ namespace EverquartzAdventure
     {
 
     }
-
-    
-    
+    public class ServerConfig : ModConfig
+    {
+        public override ConfigScope Mode => ConfigScope.ServerSide;
+        public static ServerConfig Instance { get; private set; }
+        [DefaultValue(true)]
+        public bool DeimosSummonsProvidence;
+        public override void OnLoaded()
+        {
+            Instance = this;
+        }
+    }
 }
