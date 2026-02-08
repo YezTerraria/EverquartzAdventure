@@ -163,10 +163,10 @@ namespace EverquartzAdventure.UI.Transmogrification
             };
             if (ModCompatibility.calamityEnabled)
             {
-                Transmogrifications.Add(new TransmogrificationRecipe(ItemType.AstralBlaster, ItemType.SeaPrism, 10, ItemType.ClockGatlignum, 1, 20));
+                //Clock Gatlignum was removed in Calamity 2.1.
                 Transmogrifications.Add(new TransmogrificationRecipe(ItemType.TheOracle, ItemID.FallenStar, 40, ItemType.TheMicrowave, 1, 30));
                 Transmogrifications.Add(new TransmogrificationRecipe(ItemType.PoleWarper, ItemType.EndothermicEnergy, 5, ItemID.NorthPole, 1, 60));
-                Transmogrifications.Add(new TransmogrificationRecipe(ItemType.RottingEyeball, ItemType.RottenMatter, 22, ItemType.BloodyVein, 1, 1800));
+                //Rotten Matter was removed in Calamity 2.1. RIP Bloody Vein recipe.
                 Transmogrifications.Add(new TransmogrificationRecipe(ItemType.LeviathanAmbergris, ItemType.Nucleogenesis, 1, ItemID.Shrimp, 1, 20));
                 Transmogrifications.Add(new TransmogrificationRecipe(ItemType.CryoStone, ItemType.EssenceofSunlight, 1, ItemID.WaterBucket, 1, 0));
                 Transmogrifications.Add(new TransmogrificationRecipe(ItemType.ShardofAntumbra, ItemID.SoulofLight, 5, ItemType.LightGodsBrilliance, 1, 60));

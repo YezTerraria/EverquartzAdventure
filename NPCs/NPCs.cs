@@ -14,7 +14,7 @@ namespace EverquartzAdventure
         [JITWhenModsEnabled("CalamityMod")]
         internal static class NPCType
         {
-            internal static int WITCH => ModContent.NPCType<WITCH>();
+            internal static int BrimstoneWitch => ModContent.NPCType<BrimstoneWitch>();
         }
     }
 }

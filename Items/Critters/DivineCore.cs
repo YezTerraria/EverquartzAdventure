@@ -84,10 +84,6 @@ namespace EverquartzAdventure.Items.Critters
         {
             NPC.NewNPC(new EntitySource_WorldEvent(), (int)Math.Floor(player.Center.X), (int)Math.Floor(player.Center.Y), ModContent.NPCType<NPCs.Critters.DivineCore>());
         }
-        public override bool CanUseItem(Player player)
-        {
-            return base.CanUseItem(player);
-        }
         public override bool? UseItem(Player player)
         {
             if (player.altFunctionUse == 2)

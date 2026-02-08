@@ -61,7 +61,7 @@ namespace EverquartzAdventure.Items.Weapons
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
 			for (int i = 0; i < 5; i++)
 			{
-    		Projectile.NewProjectile(source, position, velocity, CalamityWeakRef.ProjectileType.DWArrow, damage, knockback, player.whoAmI);
+    		Projectile.NewProjectile(source, position, velocity, CalamityWeakRef.ProjectileType.FriendlyLaserWallBeam, damage, knockback, player.whoAmI);
 			}
 			if (n == 7){
     			float numberProjectiles = 3 + Main.rand.Next(3); // 3, 4, or 5 shots

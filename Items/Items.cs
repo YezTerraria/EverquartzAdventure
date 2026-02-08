@@ -19,6 +19,7 @@ using CalamityMod.Items.Weapons.Rogue;
 using CalamityMod.Items.Weapons.Magic;
 using CalRemix.Content.Items.Materials;
 using CalamityMod.Items.Placeables.Ores;
+using CalamityMod.Items.Placeables.SunkenSea;
 
 namespace EverquartzAdventure
 {
@@ -33,7 +34,7 @@ namespace EverquartzAdventure
             internal static int NightmareFuel => ModContent.ItemType<NightmareFuel>();
             internal static int EndothermicEnergy => ModContent.ItemType<EndothermicEnergy>();
             internal static int DarksunFragment => ModContent.ItemType<DarksunFragment>();
-            internal static int RuneOfKos => ModContent.ItemType<RuneofKos>();
+            internal static int MarkofProvidence => ModContent.ItemType<MarkofProvidence>();
             internal static int ElysianAegis => ModContent.ItemType<ElysianAegis>();
             internal static int AsgardianAegis => ModContent.ItemType<AsgardianAegis>();
 
@@ -41,12 +42,10 @@ namespace EverquartzAdventure
 
             internal static int AstralBlaster => ModContent.ItemType<AstralBlaster>();
             internal static int SeaPrism => ModContent.ItemType<SeaPrism>();
-            internal static int ClockGatlignum => ModContent.ItemType<ClockGatlignum>();
             internal static int TheOracle => ModContent.ItemType<TheOracle>();
             internal static int TheMicrowave => ModContent.ItemType<TheMicrowave>();
             internal static int PoleWarper => ModContent.ItemType<PoleWarper>();
             internal static int RottingEyeball => ModContent.ItemType<RottingEyeball>();
-            internal static int RottenMatter => ModContent.ItemType<RottenMatter>();
             internal static int BloodyVein => ModContent.ItemType<BloodyVein>();
             internal static int LeviathanAmbergris => ModContent.ItemType<LeviathanAmbergris>();
             internal static int Nucleogenesis => ModContent.ItemType<Nucleogenesis>();

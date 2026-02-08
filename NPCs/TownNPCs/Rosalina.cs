@@ -304,7 +304,7 @@ namespace EverquartzAdventure.NPCs.TownNPCs
                     {
                         EverquartzUtils.GetTextListFromKey(ChatPostDoGKey).ForEach(st => textSelector.Add(st));
                     }
-                    if (NPC.AnyNPCs(CalamityWeakRef.NPCType.WITCH))
+                    if (NPC.AnyNPCs(CalamityWeakRef.NPCType.BrimstoneWitch))
                     {
                         EverquartzUtils.GetTextListFromKey(ChatCalamitasRefKey).ForEach(st => textSelector.Add(st, (0.8)));
                     }
@@ -402,7 +402,7 @@ namespace EverquartzAdventure.NPCs.TownNPCs
                 shop.Add(ShopItem(CalamityWeakRef.ItemType.EndothermicEnergy, Item.buyPrice(gold: 12)), downedDoG);
                 shop.Add(ShopItem(CalamityWeakRef.ItemType.DarksunFragment, Item.buyPrice(gold: 12)), downedDoG);
 
-                shop.Add(ShopItem(CalamityWeakRef.ItemType.RuneOfKos, Item.buyPrice(platinum: 2)), downedProv);
+                shop.Add(ShopItem(CalamityWeakRef.ItemType.MarkofProvidence, Item.buyPrice(platinum: 2)), downedProv);
             }
 
             shop.Add(ShopItem(ModContent.ItemType<DivineCore>(), Item.buyPrice(platinum: 5)));
